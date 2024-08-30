@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regalo Especial</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container hidden" id="main-content">
-        <div class="header">Acá está todo lo que siento y pienso de vos, sé que me van a faltar mil cosas por poner, pero bueno, si lo dijera en palabras, me faltarían más seguro 😅</div>
+        <div class="header"><h1> ❤ HOLA AMOR ❤  </h1></div>
+        <div class="section-title">Acá está todo lo que siento y pienso de vos, sé que me van a faltar mil cosas por poner, pero bueno, si lo dijera en palabras, me faltarían más seguro 😅 </div>
         <div class="button-container">
             <button id="loque-me-gusta">Lo que me gusta de vos</button>
             <button id="loque-no-me-gusta">Lo que no me gusta de vos</button>
@@ -71,12 +72,11 @@
             <div class="section-title">Lo que no me gusta de vos???</div>
             
             <div class="section-title">De verdad creiste que habria algo que no me guste de vos??? Para mi sos PERFECTA!!</div>
-            <div class="carousel">
-                <img src="/img/agos-rojo.jpg" alt="Imagen 1" class="carousel-image active">
-                <img src="/img/agos-auto.jpg" alt="Imagen 2" class="carousel-image">
-                <img src="/img/agos-verde.jpg" alt="Imagen 3" class="carousel-image">
-                <img src="/img/ascensor.jpg" alt="Imagen 4" class="carousel-image">
-                <img src="/img/cancha.jpg" alt="Imagen 5" class="carousel-image">
+            <!-- Contenedor para el carrusel -->
+            <div class="image-container">
+                <img src="/img/agos-rojo.jpg" alt="Imagen 1">
+                <img src="/img/agos-auto.jpg" alt="Imagen 2">
+                <img src="/img/agos-verde.jpg" alt="Imagen 3">
             </div>
         </div>
         <div id="quiero-agradecerte-content" class="section-content hidden">
@@ -86,12 +86,21 @@
         <div id="lo-que-quiero-content" class="section-content hidden">
             <div class="section-title">QUIERO</div>
             <p>Quiero que lo nuestro solo siga creciendo. Quiero que nuestro amor siga aumentando. Quiero hacerte feliz cada día de nuestras vidas. Quiero cuidarte siempre. Quiero mimarte todo el tiempo. Quiero repetirte hasta el hartazgo lo mucho que te amo. Quiero abrazarte siempre que tenga la oportunidad. Quiero llenarte de regalos. Quiero decirte que sos hermosa cada vez que te vea. Quiero quedarme tildado mirándote y pensar en cómo hice para estar con una persona tan increíble como vos. Quiero ir a desayunar, almorzar, merendar y cenar a cualquier lugar que se nos ocurra. Quiero hacer todos los planes que se nos ocurran. Quiero viajar y conocer la mayor cantidad de lugares que podamos. Quiero que en un futuro nos casemos. Quiero formar una familia con vos. Quiero vivir mi vida con vos. Quiero darte la vida que mereces ❤</p>
+
+            <!-- Imágenes agregadas -->
+    <div class="image-container">
+        <img src="/img/cancha.jpg" alt="Imagen 1">
+        <img src="/img/ascensor.jpg" alt="Imagen 2">
+        
+    </div>
+    <div class="section-title">Te amo mi vida ❤</div>
+</div>
        
-            <div class="section-title">Te amo mi vida ❤</div>
+            
         </div>
     </div>
     <button id="start-btn">Comenzar</button>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="/scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

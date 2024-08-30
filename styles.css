@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    background-color: #9b59b6;
+    background-color: #ae87bd;
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -60,14 +60,14 @@ ul {
 }
 
 ul li {
-    background-color: #b892c5;
+    background-color: #ae3ad4;
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: fit-content;
-    margin: 5px auto;
+    margin: 20px auto;
 }
 
 /* Responsive Design */
@@ -98,30 +98,6 @@ ul li {
     ul li {
         padding: 6px;
     }
-}
-
-/* Carousel Styles */
-.carousel-container {
-    max-width: 100%;
-    max-height: 300px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.carousel-image {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 1s ease-in-out;
-    opacity: 0;
-}
-
-.carousel-image.active {
-    opacity: 1;
 }
 
 /* SweetAlert2 Styles */
@@ -164,20 +140,69 @@ img{
     width: 50%;
 }
 
-
-
-
-/* Estilos para el carrusel */
-#loque-no-me-gusta-content .carousel {
+    /* Estilo para la contenedor de imágenes */
+.image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: ;
-    max-width: 50%;
-    max-height: 10px; /* Ajusta la altura según sea necesario */
-    margin: 20px auto;
-    position: relative;
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-#loque-no-me-gusta-content .carousel-image {
-  
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    width: 200px; /* Ajusta el ancho de las imágenes según sea necesario */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+/* Estilo general para los contenedores de los títulos */
+.section-title {
+    background-color: #800080; /* Color violeta */
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo para los títulos dentro de los contenedores */
+.section-title h1, 
+.section-title h2, 
+.section-title h3, 
+.section-title h4, 
+.section-title h5, 
+.section-title h6 {
+    color: white; /* Color del texto */
+    margin: 0;
+    font-size: 1.5em;
+}
+
+
+
+    /* Estilo específico para el título principal */
+.header h1 {
+    color: white; /* Color oscuro para el título principal */
+    font-size: 50px; /* Tamaño más grande para el título principal */
+
+    background-color: #00008B; /* Color violeta */
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Centra el texto */
+}
